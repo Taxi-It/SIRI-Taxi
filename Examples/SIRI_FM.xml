@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SIRI italian Feed | Taxi Parkings + Taxi Available | Revisione 2025-02-11 -->
+<!-- Made by Taxi.it -->
+<!-- Fonte: Example from by Rossella Panero (5T S.r.l.) -->
+<Siri xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.siri.org.uk/schema/2.0/xsd/siri.xsd" xmlns="http://www.siri.org.uk/siri" version="2.1">
+	<ServiceDelivery>
+		<ResponseTimestamp>2025-02-10T10:33:11.695Z</ResponseTimestamp>
+		<ProducerRef>RAP</ProducerRef>
+		<!-- Stato stalli taxi (quanti sono occupati e quindi taxi disponibili)-->
+		<FacilityMonitoringDelivery>
+			<ResponseTimestamp>2025-02-10T10:29:59+01:00</ResponseTimestamp>
+			<SubscriberRef>NAP</SubscriberRef>
+			<SubscriptionRef>0001</SubscriptionRef>
+			<FacilityCondition>
+				<FacilityRef>IT:ITH3:Parking:taxiStandPadova:p:26</FacilityRef>
+				<FacilityStatus>
+					<Status>partiallyAvailable</Status>
+				</FacilityStatus>
+				<MonitoredCounting>
+					<CountingType>presentCount</CountingType>  <!-- taxi al posteggio)-->
+					<CountedFeatureUnit>otherSpaces</CountedFeatureUnit> 
+					<Count>5</Count>
+				</MonitoredCounting>
+			</FacilityCondition>
+		</FacilityMonitoringDelivery>
+		<!-- Disponibilità taxi e posizione. Usare questo feed per indicare la posizione di un taxi disponibile -->
+		<FacilityMonitoringDelivery>
+			<ResponseTimestamp>2025-02-10T10:29:59+01:00</ResponseTimestamp>
+			<SubscriberRef>NAP</SubscriberRef>
+			<SubscriptionRef>0001</SubscriptionRef>
+			<FacilityCondition>
+				<Facility>
+					<FacilityClass>vehicle</FacilityClass>
+					<FacilityLocation>
+						<VehicleRef>IT:ITH3:Vehicle:taxiCORAPA_CO08</VehicleRef>
+						<OperatorRef>IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA</OperatorRef>
+					</FacilityLocation>
+				</Facility>			
+				<FacilityStatus>
+					<Status>available</Status>
+				</FacilityStatus>
+				<FacilityUpdatedPosition>
+					<Longitude>11.956081086628549</Longitude>
+					<Latitude>45.39707483292637</Latitude>
+				</FacilityUpdatedPosition>
+			</FacilityCondition>
+		</FacilityMonitoringDelivery>
+	</ServiceDelivery>
+</Siri>
