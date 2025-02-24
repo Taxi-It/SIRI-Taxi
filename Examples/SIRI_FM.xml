@@ -12,7 +12,7 @@
 			<SubscriberRef>NAP</SubscriberRef>
 			<SubscriptionRef>0001</SubscriptionRef>
 			<FacilityCondition>
-				<FacilityRef>IT:ITH3:Parking:taxiStandPadova:p:26</FacilityRef>
+				<FacilityRef>IT:ITH3:Parking:taxiStandPadova:p:StazioneFS</FacilityRef>
 				<FacilityStatus>
 					<Status>partiallyAvailable</Status>
 				</FacilityStatus>
