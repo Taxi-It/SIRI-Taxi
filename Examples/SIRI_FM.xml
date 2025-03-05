@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- SIRI italian Feed | Taxi Parkings + Taxi Available | Revisione 2025-02-11 -->
+<!-- SIRI italian Feed | Taxi Parkings + Taxi Available | Revisione 2025-03-05 -->
 <!-- Made by Taxi.it -->
 <!-- Fonte: Example from by Rossella Panero (5T S.r.l.) -->
 <Siri xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.siri.org.uk/schema/2.0/xsd/siri.xsd" xmlns="http://www.siri.org.uk/siri" version="2.1">
@@ -19,7 +19,18 @@
 				<MonitoredCounting>
 					<CountingType>presentCount</CountingType>  <!-- taxi al posteggio)-->
 					<CountedFeatureUnit>otherSpaces</CountedFeatureUnit> 
-					<Count>5</Count>
+					<Count>1</Count>
+				</MonitoredCounting>
+			</FacilityCondition>
+			<FacilityCondition>
+				<FacilityRef>IT:ITH3:Parking:taxiStandPadova:p:Tirana</FacilityRef>
+				<FacilityStatus>
+					<Status>partiallyAvailable</Status>
+				</FacilityStatus>
+				<MonitoredCounting>
+					<CountingType>presentCount</CountingType>  <!-- taxi al posteggio)-->
+					<CountedFeatureUnit>otherSpaces</CountedFeatureUnit> 
+					<Count>0</Count>
 				</MonitoredCounting>
 			</FacilityCondition>
 		</FacilityMonitoringDelivery>
@@ -32,7 +43,7 @@
 				<Facility>
 					<FacilityClass>vehicle</FacilityClass>
 					<FacilityLocation>
-						<VehicleRef>IT:ITH3:Vehicle:taxiCORAPA_CO08</VehicleRef>
+						<VehicleRef>IT:ITH3:Vehicle:taxiCORAPA_CO01</VehicleRef>
 						<OperatorRef>IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA</OperatorRef>
 					</FacilityLocation>
 				</Facility>			
@@ -40,8 +51,24 @@
 					<Status>available</Status>
 				</FacilityStatus>
 				<FacilityUpdatedPosition>
-					<Longitude>11.956081086628549</Longitude>
-					<Latitude>45.39707483292637</Latitude>
+					<Longitude>11.880289529059162</Longitude>
+					<Latitude>45.41711967787191</Latitude>
+				</FacilityUpdatedPosition>
+			</FacilityCondition>
+			<FacilityCondition>
+				<Facility>
+					<FacilityClass>vehicle</FacilityClass>
+					<FacilityLocation>
+						<VehicleRef>IT:ITH3:Vehicle:taxiCORAPA_CO02</VehicleRef>
+						<OperatorRef>IT:ITH3:Operator:00345320287:taxiCORAPA:CORAPA</OperatorRef>
+					</FacilityLocation>
+				</Facility>			
+				<FacilityStatus>
+					<Status>available</Status>
+				</FacilityStatus>
+				<FacilityUpdatedPosition>
+					<Longitude>11.883230594256228</Longitude>
+					<Latitude>45.41542091543375</Latitude>
 				</FacilityUpdatedPosition>
 			</FacilityCondition>
 		</FacilityMonitoringDelivery>
